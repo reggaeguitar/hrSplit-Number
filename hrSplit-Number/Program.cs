@@ -13,8 +13,8 @@ namespace hrSplit_Number
             {
                 var str = Console.ReadLine();
                 var matches = regex.Match(str).Groups;
-                var answer = String.Format("CountryCode{0},LocalAreaCode={1},Number={2}",
-                    matches[0], matches[1], matches[2]);
+                var answer = String.Format("CountryCode={0},LocalAreaCode={1},Number={2}",
+                    matches[1], matches[2], matches[3]);
                 Console.WriteLine(answer);
             }
         }
